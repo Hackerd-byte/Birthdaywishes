@@ -440,14 +440,14 @@ button {
     letter-spacing: 2px;
 }
 .questions-slider {
-    position: relative;
-    min-height: 400px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
 }
 .q-card {
-    position: absolute;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     width: 100%;
     opacity: 0;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);

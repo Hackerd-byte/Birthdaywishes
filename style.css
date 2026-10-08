@@ -21,7 +21,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-primary);
     font-family: var(--font-sans);
-    line-height: 1.6;
+    line-height: 1;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -428,6 +428,11 @@ button {
 .point-item span { color: var(--accent-color); font-family: var(--font-serif); font-weight: bold; margin-right: 10px; }
 
 /* SECTION 7.5: 27 QUESTIONS */
+#questions-story {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: auto;
+}
 .questions-carousel-container {
     position: relative;
     max-width: 800px;

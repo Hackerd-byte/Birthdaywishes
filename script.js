@@ -163,10 +163,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // --- 5.5 27 QUESTIONS. ONE STORY. ---
     const storyQuestions = [
         { q: "What does having your younger brother in your life mean to you?", a: "It's an unexplainable happiness — a true support and companion.", extra: "" },
-        { q: "What's one of your earliest memories with your younger brother?", a: "The first time I drove an XL with you when I was in 8th standard.", extra: "<div class='img-placeholder mt-1' style='height: 200px;'>[Memory Photo Placeholder]</div>" },
-        { q: "How do you think you've changed over the years?", a: "My looks and attitude have changed drastically.", extra: "<div style='display:flex; justify-content:center; gap:20px; margin-top:20px;'><div class='img-placeholder' style='width:120px; height:120px;'>Then</div><div class='img-placeholder' style='width:120px; height:120px;'>Now</div></div>" },
+        { q: "What's one of your earliest memories with your younger brother?", a: "The first time I drove an XL with you when I was in 8th standard.", extra: "<img src='images/XL_Memory.jpeg' class='mt-1' style='max-height: 200px; max-width: 100%; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);'>" },
+        { q: "How do you think you've changed over the years?", a: "My looks and attitude have changed drastically.", extra: "<div style='display:flex; justify-content:center; gap:20px; margin-top:20px;'><img src='images/then.jpeg' style='width:120px; height:120px;'>Then</div><img src='images/27_old.jpeg' style='width:120px; height:120px;'>Now</div></div>" },
         { q: "What do you think both of us need to become better brothers?", a: "We need to become more understanding and stronger companions for each other.", extra: "" },
-        { q: "Do you remember one of my earliest birthdays?", a: "Your first birthday — that orange dress.", extra: "<div class='img-placeholder mt-1' style='height: 150px; width:150px; margin: 20px auto 0;'>[Childhood Photo]</div>" },
+        { q: "Do you remember one of my earliest birthdays?", a: "Your first birthday — that orange dress.", extra: "<img src='images/firstHBD.jpeg' mt-1' style='height: 150px; width:150px; margin: 20px auto 0;'>[Childhood Photo]</div>" },
         { q: "What is the strangest thing about sharing your birthday with your younger brother?", a: "First of all, most people don't believe it. Sometimes even I feel strange.", extra: "" },
         { q: "How have you felt about sharing the same birthday over the years?", a: "In childhood, I thought the same birthday thing was different and I was happy about it. But for the past four years, sometimes I feel like having separate dates would be better.", extra: "<p style='font-size:1rem; font-style:italic; margin-top:15px; color:var(--text-secondary);'>Some feelings change as we grow. That's part of growing up too.</p>" },
         { q: "What funny thing did you do to prove that we actually share the same birthday? 😂", a: "While giving chocolate to people, I would bring my ID card too as proof. 😂", extra: "" },
@@ -184,7 +184,11 @@ document.addEventListener("DOMContentLoaded", () => {
         { q: "What is one thing you're currently struggling with?", a: "My current struggles and pain because I didn't use my time well in the past.", extra: "<div style='margin-top:20px; font-family:var(--font-serif); font-weight:bold; letter-spacing:2px;'><span style='color:var(--text-secondary)'>PAST</span> &rarr; LESSONS &rarr; <span class='accent-color'>NEXT</span></div>" },
         { q: "If you had to describe your younger brother in Tamil, what would you call him?", a: "Arumayana aarvakolarana arivana sagotharar.", extra: "<div style='margin-top:15px; font-style:italic; color:var(--text-secondary);'>\"A wonderful, curious, intelligent brother.\"</div>" },
         { q: "If you had to describe your younger brother in one brutally honest sentence? 😂", a: "Paavam daa avan.", extra: "" },
-        { q: "If your life so far were a story, what would you call it?", a: "A Story of a Self-Made Survivor", extra: "<div class='mt-2'><span class='q-visual-text' style='animation-delay: 1s; font-size:1.5rem; color:var(--text-secondary);'>27 chapters written.</span><span class='q-visual-text' style='animation-delay: 2.5s; font-size:1.5rem; color:var(--text-secondary);'>Many more waiting to be written.</span></div>" }
+        { q: "If you had to describe your life so far as a story, what would you call it?", a: "A Story of a Self-Made Survivor", extra: "<div class='mt-2'><span class='q-visual-text' style='animation-delay: 1s; font-size:1.5rem; color:var(--text-secondary);'>27 chapters written.</span><span class='q-visual-text' style='animation-delay: 2.5s; font-size:1.5rem; color:var(--text-secondary);'>Many more waiting to be written.</span></div>" },
+        { q: "Who is the better looking brother? 😎", a: "Obviously me. There is no debate.", extra: "" },
+        { q: "What's a secret we kept from Mom and Dad? 🤫", a: "Nice try! They might be reading this right now. 🤐", extra: "" },
+        { q: "Who takes longer to get ready when going out? 🕰️", a: "Definitely you.", extra: "" },
+        { q: "Any final words for our shared birthday? 🎂", a: "Let's keep making memories and chasing our dreams together. Happy Birthday to us!", extra: "<div class='mt-2'><span class='q-visual-text accent-color' style='animation-delay: 0.5s; font-size:2rem;'>CHEERS TO 27! 🥂</span></div>" }
     ];
 
     const qSlider = document.getElementById('questions-slider');
@@ -340,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Global modal functions
 function openLightbox(imgSrc, title, caption) {
     // Uncomment these when you have real images
-    // document.getElementById('lightbox-img').src = imgSrc;
+    document.getElementById('lightbox-img').src = imgSrc;
     document.getElementById('lightbox-title').innerText = title;
     document.getElementById('lightbox-caption').innerText = caption;
     document.getElementById('lightbox').style.display = 'flex';

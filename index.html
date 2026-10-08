@@ -20,9 +20,9 @@
 
     <!-- Background Music (Audio Placeholder) -->
     <!-- REPLACE: Add your background song in the audio folder and update the src -->
-    <audio id="bg-music" loop>
+    <!-- <audio id="bg-music" loop>
         <source src="audio/celebration.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
 
     <!-- SECTION 1: CINEMATIC OPENING -->
     <section id="opening" class="fullscreen flex-center text-center">
@@ -82,7 +82,7 @@
                 <div class="timeline-item reveal">
                     <div class="timeline-image">
                         <!-- REPLACE: images/childhood.jpg -->
-                        <img src="images/childhood.jpg" alt="Childhood" class="placeholder-img">
+                        <img src="images/childhood.jpeg" alt="Childhood" class="placeholder-img">
                     </div>
                     <div class="timeline-content">
                         <h3>Childhood</h3>
@@ -102,7 +102,7 @@
                     </div>
                     <div class="timeline-image">
                         <!-- REPLACE: images/school.jpg -->
-                        <img src="images/school.jpg" alt="School" class="placeholder-img">
+                        <img src="images/school.jpeg" alt="School" class="placeholder-img">
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
                 <div class="timeline-item reveal">
                     <div class="timeline-image">
                         <!-- REPLACE: images/recent.jpg -->
-                        <img src="images/recent.jpg" alt="Recent" class="placeholder-img">
+                        <img src="images/27_old.jpeg" alt="Recent" class="placeholder-img">
                     </div>
                     <div class="timeline-content">
                         <h3>27 Years Old</h3>
@@ -124,17 +124,17 @@
     </section>
 
     <!-- SECTION 4: THINGS ONLY I KNOW -->
-    <section id="secrets" class="content-section">
+    <!-- <section id="secrets" class="content-section">
         <div class="container text-center">
             <h2 class="section-title serif reveal">27 things I know about you that Google definitely doesn't.</h2>
             <p class="subtitle mb-3 reveal">Click to reveal.</p>
             
             <div class="cards-grid">
-                <!-- Generate cards via JS to keep HTML clean -->
+                 Generate cards via JS to keep HTML clean 
                 <div class="fact-cards-container"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- SECTION 5: QUIZ -->
     <section id="quiz" class="content-section bg-darker">
@@ -145,9 +145,9 @@
                 <div class="quiz-question active" id="q1">
                     <h3>1. What would you choose if you could travel anywhere tomorrow?</h3>
                     <div class="quiz-options">
-                        <button class="quiz-btn">Mountains</button>
-                        <button class="quiz-btn">Beach</button>
-                        <button class="quiz-btn">A new city</button>
+                        <button class="quiz-btn">With Family</button>
+                        <button class="quiz-btn">With Friends</button>
+                        <button class="quiz-btn">Solo Trip</button>
                     </div>
                 </div>
                 <!-- Other questions handled by JS -->
@@ -169,17 +169,16 @@
             
             <div class="masonry-gallery reveal">
                 <!-- Gallery Item 1 -->
-                <div class="gallery-item" onclick="openLightbox('images/trip.jpg', '2015 — Family Trip', 'We had absolutely no idea that this random day would become one of the memories we\'d keep forever.')">
-                    <!-- REPLACE: images/trip.jpg -->
-                    <div class="img-placeholder">Photo 1</div>
+                <div class="gallery-item" onclick="openLightbox('images/photo1.jpeg', '2015 — Family Trip', 'We had absolutely no idea that this random day would become one of the memories we\'d keep forever.')">
+                    <div class="img-placeholder">Click to view memory</div>
                 </div>
                 <!-- Gallery Item 2 -->
-                <div class="gallery-item" onclick="openLightbox('images/funny.jpg', '2018 — That funny incident', 'I still laugh when I think about this day.')">
-                    <div class="img-placeholder">Photo 2</div>
+                <div class="gallery-item" onclick="openLightbox('images/photo2.jpeg', '2018 — That funny incident', 'I still laugh when I think about this day.')">
+                    <div class="img-placeholder">Click to view memory</div>
                 </div>
                 <!-- Gallery Item 3 -->
-                <div class="gallery-item" onclick="openLightbox('images/brother.jpg', '2022 — Just us', 'Always brothers.')">
-                    <div class="img-placeholder">Photo 3</div>
+                <div class="gallery-item" onclick="openLightbox('images/photo3.jpeg', '2022 — Just us', 'Always brothers.')">
+                    <div class="img-placeholder">Click to view memory</div>
                 </div>
             </div>
         </div>
@@ -215,7 +214,7 @@
             <p class="subtitle mb-3 reveal">A glimpse into the person behind the memories.</p>
             
             <div class="questions-carousel-container reveal">
-                <div class="question-progress serif accent-color mb-2"><span id="q-current">01</span> / 23</div>
+                <div class="question-progress serif accent-color mb-2"><span id="q-current">01</span> / 27</div>
                 
                 <div class="questions-slider" id="questions-slider">
                     <!-- JS will populate questions -->
@@ -348,21 +347,21 @@
             <p class="mt-1 mb-2">Now go make Chapter 27 unforgettable.</p>
             
             <!-- Video Section -->
-            <button class="primary-btn" onclick="openVideo()">Watch Your Gift &rarr;</button>
+            <button class="primary-btn" onclick="openVideo()">With Love! ❤️ &rarr;</button>
         </div>
     </div>
 
     <!-- Video Modal -->
-    <div id="video-modal" class="lightbox">
+    <!-- <div id="video-modal" class="lightbox">
         <span class="close-lightbox" onclick="closeVideo()">&times;</span>
         <div class="video-container">
-            <!-- REPLACE: videos/birthday-video.mp4 -->
+             REPLACE: videos/birthday-video.mp4 
             <video id="bday-video" controls>
                 <source src="videos/birthday-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-    </div>
+    </div> -->
 
     <!-- FOOTER -->
     <footer>
@@ -370,6 +369,6 @@
         <p class="accent-color">Same day. Different years. Always brothers.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 </html>
